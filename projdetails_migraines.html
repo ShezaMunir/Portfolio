@@ -1,0 +1,231 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Migraine Prediction Engine</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+	<link rel="icon" type="image/svg+xml" href="images/logo.svg" />
+
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<h1>Migraine Prediction Engine</h1>
+			<p>Predicting Migraines a Day in Advance Using Wearable Data</p>
+		</header>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Content -->
+			<section id="content" class="main">
+				<h2>Overview</h2>
+				<p>The Migraine Prediction Engine is a data-driven research project aimed at leveraging advanced machine
+					learning models
+					to predict migraine episodes. Conducted across two distinct phases, this project integrates diverse
+					data streams,
+					including digital biomarkers from wearables, weather variables, and patient-reported digital
+					diaries. The ultimate
+					goal is to reduce the uncertainty and burden of migraines, enabling patients to take preventive
+					measures
+					effectively.</p>
+
+				<h2>Motivation</h2>
+				<p>Migraines represent one of the most debilitating neurological disorders, disproportionately affecting
+					women during
+					their peak productive years. The unpredictability of migraine episodes exacerbates anxiety and
+					significantly impacts
+					quality of life. Existing solutions, both prophylactic and abortive, are often insufficient and can
+					lead to adverse
+					side effects. This project seeks to address these limitations by developing a predictive system that
+					combines
+					physiological, environmental, and personal data to provide actionable insights for migraine
+					sufferers.</p>
+
+				<h2>Situation</h2>
+				<p>Traditional methods for migraine management rely heavily on patients identifying and avoiding
+					triggers through manual
+					logging, which is prone to recall bias. While some digital solutions exist, they often require
+					exhaustive user input
+					and fail to accommodate the unique migraine patterns of individuals. Furthermore, single-stream
+					models lack the
+					predictive accuracy needed to mitigate migraine episodes effectively. Our study aims to build a more
+					comprehensive,
+					personalized approach using state-of-the-art machine learning models.</p>
+
+				<h2>Task</h2>
+				<p>Our research was structured in two phases:</p>
+				<ul>
+					<li><strong>Phase 1</strong>: Understanding the migraine landscape in a Pakistani context, where
+						environmental and
+						socio-cultural factors pose additional challenges. This phase involved qualitative research
+						through
+						semi-structured interviews with migraine patients and healthcare professionals to identify
+						common triggers,
+						symptoms, and the feasibility of tech-based interventions.</li>
+					<li><strong>Phase 2</strong>: A more data-intensive in-lab study conducted in Massachusetts, USA,
+						focusing on
+						developing and validating predictive models using multi-stream data. This phase included the
+						deployment of
+						wearable devices, the development of a digital diary app, and the integration of weather data.
+					</li>
+				</ul>
+
+				<h2>Action</h2>
+				<h3>Phase 1: Qualitative Analysis</h3>
+				<ul>
+					<li><strong>Data Collection</strong>: Conducted 13 interviews with migraine patients and 2 with
+						doctors to explore
+						migraine management practices, identify common triggers, and assess the potential acceptance of
+						wearable
+						technology in Pakistan.</li>
+					<li><strong>Thematic Analysis</strong>: Coded interview transcripts to extract themes related to
+						migraine
+						perceptions, common symptoms, and barriers to effective management. Key findings indicated a
+						preference for
+						non-pharmacological treatments and a reluctance to adopt wearable technology due to cultural and
+						economic
+						factors.</li>
+				</ul>
+
+				<h3>Phase 2: Quantitative Analysis and Model Development</h3>
+				<ul>
+					<li><strong>Data Streams</strong>: Collected over 1,252 hours of wearable data, 733 days of diary
+						entries, and two
+						years of weather information using Python libraries like <code>scikit-learn</code>,
+						<code>PyTorch</code>, and
+						<code>TensorFlow</code>.
+					</li>
+					<li><strong>Feature Engineering</strong>: Converted qualitative inputs into machine-readable formats
+						using
+						techniques like one-hot encoding for categorical data and moving averages for time-series
+						imputation.</li>
+					<li><strong>Model Training</strong>:
+						<ul>
+							<li>Employed K-Nearest Neighbors (KNN), Random Forests, and Multilayer Perceptrons (MLP) for
+								supervised
+								learning.</li>
+							<li>Trained Long Short-Term Memory (LSTM) networks for sequential data to account for
+								temporal dependencies,
+								using Python’s <code>PyTorch</code> and <code>scikit-learn</code> for model
+								cross-validation.</li>
+							<li>Integrated weather variables to understand their impact on migraine onset, using data
+								from the
+								Weatherbit API.</li>
+						</ul>
+					</li>
+					<li><strong>Voting Mechanism</strong>: Developed a novel voting algorithm to aggregate predictions
+						from wearable and
+						diary data streams, enhancing model robustness.</li>
+				</ul>
+
+				<h2>Results</h2>
+				<ul>
+					<li><strong>Phase 1 Insights</strong>: Identified unique triggers prevalent in Pakistan, such as
+						fasting and extreme
+						heat, and highlighted the cultural barriers to tech adoption. The thematic analysis provided
+						foundational
+						knowledge to tailor future interventions.</li>
+					<li><strong>Phase 2 Model Performance</strong>: Achieved prediction accuracies between 60% and 73%,
+						with lead times
+						of 2-8 hours. The LSTM model demonstrated the ability to predict migraine episodes by detecting
+						patterns in
+						physiological data, stress levels, and weather fluctuations. The use of a harmonic mean to
+						combine predictions
+						from diary and sensor data improved the system's overall precision.</li>
+					<li><strong>Impact</strong>: Demonstrated the potential of personalized predictive models in
+						reducing
+						migraine-related distress. Emphasized the need for tailored solutions that address both
+						individual and cultural
+						factors.</li>
+				</ul>
+
+				<h2>Conclusion</h2>
+				<p>The Migraine Prediction Engine exemplifies the integration of health informatics, machine learning,
+					and user-centered
+					design. By combining diverse data streams and employing robust statistical models, this project
+					paves the way for
+					innovative migraine management strategies. Our research underscores the importance of personalized
+					healthcare
+					solutions and the role of interdisciplinary approaches in addressing complex medical challenges.</p>
+
+				<ul class="actions">
+					<li><a href="assets/docs/Migraines_Phase1.pdf" target="_blank" class="button">Report (Phase 1)</a>
+					</li>
+					<li><a href="assets/docs/Migraines_Phase2.pdf" target="_blank" class="button">Report (Phase 2)</a>
+					</li>
+					<li><a href="assets/docs/Migraines_Pitch_Presentation.pdf" target="_blank" class="button">Pitch
+							Presentation</a>
+					</li>
+				</ul>
+
+			</section>
+
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<section>
+				<h2>Collaborations:</h2>
+				<p>I'm always open to new opportunities and collaborations.<br />
+					Feel free to reach out through any of the following channels:</p>
+				<!-- <ul class="actions">
+							<li><a href="generic.html" class="button">Learn More</a></li>
+						</ul> -->
+				<ul class="icons">
+					<li><a href="https://x.com/sheza_munir" class="icon brands fa-twitter alt"><span
+								class="label">Twitter</span></a>
+					</li>
+					<!-- <li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
+											<li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li> -->
+					<li><a href="https://github.com/ShezaMunir" class="icon brands fa-github alt"><span
+								class="label">GitHub</span></a>
+					</li>
+					<li><a href="https://www.linkedin.com/in/shezamunir/" class="icon brands fa-linkedin alt"><span
+								class="label">Dribbble</span></a></li>
+				</ul>
+			</section>
+			<section>
+				<h2>Get in touch!</h2>
+				<dl class="alt">
+					<dt>Address</dt>
+					<dd>Ann Arbor, MI, USA</dd>
+					<dt>Phone</dt>
+					<dd>(734) 837-1252</dd>
+					<dt>Email</dt>
+					<dd><a href="shezamnr@umich.edu">shezamnr@umich.edu</a></dd>
+				</dl>
+
+			</section>
+			<p class="copyright">&copy; Sheza Munir. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+		</footer>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

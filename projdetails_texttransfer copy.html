@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Text Style Transfer</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+	<link rel="icon" type="image/svg+xml" href="images/logo.svg" />
+
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<h1>Text Style Transfer</h1>
+			<p>Bringing Classics to the Modern World</p>
+		</header>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Content -->
+			<section id="content" class="main">
+				<h2>Motivation</h2>
+				<p>The challenge of text style transfer, particularly between writing styles, presents a
+					significant opportunity for advancing natural language processing (NLP) techniques. This project
+					addresses the
+					complexities of non-parallel data in style transfer tasks, a persistent issue in the field where
+					equivalent sentences in
+					different styles are not readily available. By focusing on the works of Jane Austen as a
+					representative of classical
+					literature, we explore innovative solutions to this problem. The motivation stems from the potential
+					applications of
+					such technology in content generation, translation, and improving the accessibility of historical
+					texts to modern
+					readers. Furthermore, we are driven by the prospect of leveraging state-of-the-art language models
+					to generate synthetic
+					parallel datasets, a novel approach to overcome the scarcity of parallel data in style transfer
+					tasks. This method not
+					only contributes to the broader field of computational linguistics but also opens new avenues for
+					cultural heritage
+					preservation in the digital age. By developing techniques to create high-quality synthetic datasets,
+					we aim to enhance
+					the performance and generalizability of style transfer models, potentially revolutionizing how we
+					approach non-parallel
+					text style transfer problems across various domains and time periods.</p>
+				<h2>Task</h2>
+				<p>Our primary task was to develop an effective method for bidirectional text style transfer between
+					classical and
+					contemporary English, using Jane Austen's works as our source material. This involved overcoming the
+					challenge of
+					non-parallel data, where equivalent sentences in different styles are not explicitly paired. We
+					aimed to create a model
+					capable of generating text in Austen's style and transforming it into modern English while
+					preserving semantic meaning.
+					We sought to explore innovative approaches to generate synthetic parallel data to enhance the
+					performance
+					of our style transfer models.</p>
+				<h2>Action</h2>
+				<p>We implemented a multi-stage approach to tackle this task. Initially, we fine-tuned the GPT-2 model
+					on Jane Austen's
+					works to generate text in her authorial style. To address the non-parallel nature of our data, we
+					employed an innovative
+					technique using OpenAI's GPT-3.5-Turbo model to generate parallel text by transforming Austen's
+					writing into modern
+					English. This synthetic parallel dataset was crucial in overcoming the limitations of non-parallel
+					data. We then
+					developed a BARTForConditionalGeneration model for bidirectional text style transfer, combining data
+					from Project
+					Gutenberg with our augmented parallel dataset. Throughout the process, we utilized advanced NLP
+					techniques such as
+					tokenization, sequence-to-sequence modeling, and fine-tuning of pre-trained language models.</p>
+				<h2>Results</h2>
+				<p>Our approach yielded promising results in achieving seamless text style transfer between classical
+					and contemporary
+					styles. The fine-tuned BART model demonstrated significant improvements over baseline methods,
+					achieving higher
+					BERTScore metrics (precision: 0.9202, recall: 0.9384, F1 score: 0.9291) and a low perplexity score
+					of 1.8308. These
+					results indicate that our model effectively captures the nuances of both classical and contemporary
+					writing styles while
+					maintaining semantic coherence. The synthetic parallel data generated using GPT-3.5-Turbo proved
+					instrumental in
+					enhancing the model's performance, addressing the challenge of non-parallel data in style transfer
+					tasks. Our work
+					contributes to the advancement of style transfer techniques in NLP, particularly in handling
+					non-parallel data, and
+					opens up new possibilities for applications in literary analysis, content adaptation, and historical
+					text modernization.</p>
+
+
+				<ul class="actions">
+					<li><a href="assets/docs/TextTransfer_Project_Report.pdf" target="_blank" class="button">Report</a>
+					</li>
+				</ul>
+
+			</section>
+
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<section>
+				<h2>Collaborations:</h2>
+				<p>I'm always open to new opportunities and collaborations.<br />
+					Feel free to reach out through any of the following channels:</p>
+				<!-- <ul class="actions">
+							<li><a href="generic.html" class="button">Learn More</a></li>
+						</ul> -->
+				<ul class="icons">
+					<li><a href="https://x.com/sheza_munir" class="icon brands fa-twitter alt"><span
+								class="label">Twitter</span></a>
+					</li>
+					<!-- <li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
+											<li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li> -->
+					<li><a href="https://github.com/ShezaMunir" class="icon brands fa-github alt"><span
+								class="label">GitHub</span></a>
+					</li>
+					<li><a href="https://www.linkedin.com/in/shezamunir/" class="icon brands fa-linkedin alt"><span
+								class="label">Dribbble</span></a></li>
+				</ul>
+			</section>
+			<section>
+				<h2>Get in touch!</h2>
+				<dl class="alt">
+					<dt>Address</dt>
+					<dd>Ann Arbor, MI, USA</dd>
+					<dt>Phone</dt>
+					<dd>(734) 837-1252</dd>
+					<dt>Email</dt>
+					<dd><a href="shezamnr@umich.edu">shezamnr@umich.edu</a></dd>
+				</dl>
+
+			</section>
+			<p class="copyright">&copy; Sheza Munir. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+		</footer>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -3940,3 +3940,12 @@ input, select, textarea {
 .media-gallery img:hover {
   transform: scale(1.05);
 }
+
+        .professor {
+    margin-bottom: 20px;
+    border: 1px solid #ccc; /* Light border around the container */
+    padding: 15px; /* Space inside the box */
+    border-radius: 10px; /* Rounded edges */
+    background-color: #f9f9f9; /* Optional: light background color */
+}
+
