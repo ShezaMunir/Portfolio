@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>LM Factuality Evaluation</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+	<link rel="icon" type="image/svg+xml" href="images/logo.svg" />
+
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<h1>LM Factuality Evaluation</h1>
+			<p>A Dynamic Benchmark for In-the-Wild Language Model Factuality Evaluation</p>
+		</header>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Content -->
+			<section id="content" class="main">
+
+				<span class="image main"><img src="images/proj_factuality_methodology.jpg" alt=""
+						style="padding: 20px;" /></span>
+
+				<h2>Motivation</h2>
+				<p>The rapid adoption of language models (LMs) in various applications has highlighted the critical
+					need for maintaining
+					factual accuracy across a wide range of topics. As these models become increasingly integrated into
+					our daily lives, the
+					challenge of ensuring their reliability and truthfulness grows more pressing. This motivated the
+					development of
+					FACTBENCH, a dynamic benchmark designed to evaluate the factuality of LMs in real-world scenarios,
+					addressing the
+					limitations of existing static and narrow-scope evaluation methods.</p>
+				<h2>Task</h2>
+				<p>Our task was to create a comprehensive and updatable benchmark for assessing the factual accuracy of
+					language models in
+					diverse, real-world contexts. This involved developing a pipeline to identify "hallucination
+					prompts" - queries that
+					tend to elicit incorrect or inconclusive responses from LMs. We needed to design an effective method
+					for
+					evaluating the factuality of LM-generated content, considering the verifiability of statements and
+					the nuances of
+					different content types.</p>
+				<h2>Action</h2>
+				<p>We developed VERIFY, a Verification and Evidence RetrIeval for FactualitY evaluation pipeline, to
+					systematically assess
+					LM responses. This involved extracting content units from model outputs, classifying them by type,
+					and evaluating
+					verifiable units against web-based evidence. We implemented an interactive query generation and
+					evidence retrieval
+					technique to enhance the quality of fact-checking. Using this pipeline, we curated FACTBENCH, a
+					dataset of 1,000 prompts
+					across 150 fine-grained topics, categorized into different difficulty tiers based on LM performance.
+				</p>
+				<h2>Results</h2>
+				<p>Our work resulted in the creation of FACTBENCH, the first dynamic and in-the-wild factuality
+					evaluation benchmark for
+					language models. This benchmark not only captures emerging factuality challenges in real-world LM
+					interactions but is
+					also regularly updated with new prompts. Through extensive evaluation of widely-used LMs, including
+					GPT, Gemini, and
+					Llama3.1 family models, we uncovered key insights into their factual accuracy across different
+					difficulty levels.
+					Notably, VERIFY achieved the highest correlation with human judgments compared to existing
+					factuality evaluation
+					methods, underscoring its effectiveness in assessing LM factuality.</p>
+
+				<ul class="actions">
+					<li><a href="https://arxiv.org/abs/2410.22257" target="_blank" class="button">Paper</a>
+					</li>
+					<li><a href="https://huggingface.co/spaces/launch/factbench" target="_blank"
+							class="button">HuggingFace</a></li>
+					<!-- <li><a href="generic.html" target="_blank" class="button">Learn More</a></li> -->
+				</ul>
+
+			</section>
+
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<section>
+				<h2>Collaborations:</h2>
+				<p>I'm always open to new opportunities and collaborations.<br />
+					Feel free to reach out through any of the following channels:</p>
+				<!-- <ul class="actions">
+							<li><a href="generic.html" class="button">Learn More</a></li>
+						</ul> -->
+				<ul class="icons">
+					<li><a href="https://x.com/sheza_munir" class="icon brands fa-twitter alt"><span
+								class="label">Twitter</span></a>
+					</li>
+					<!-- <li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
+											<li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li> -->
+					<li><a href="https://github.com/ShezaMunir" class="icon brands fa-github alt"><span
+								class="label">GitHub</span></a>
+					</li>
+					<li><a href="https://www.linkedin.com/in/shezamunir/" class="icon brands fa-linkedin alt"><span
+								class="label">Dribbble</span></a></li>
+				</ul>
+			</section>
+			<section>
+				<h2>Get in touch!</h2>
+				<dl class="alt">
+					<dt>Address</dt>
+					<dd>Ann Arbor, MI, USA</dd>
+					<dt>Phone</dt>
+					<dd>(734) 837-1252</dd>
+					<dt>Email</dt>
+					<dd><a href="shezamnr@umich.edu">shezamnr@umich.edu</a></dd>
+				</dl>
+
+			</section>
+			<p class="copyright">&copy; Sheza Munir. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+		</footer>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
